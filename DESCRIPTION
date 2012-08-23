@@ -1,8 +1,8 @@
 Package: PVAClone
 Type: Package
 Title: Population Viability Analysis with Data Cloning
-Version: 0.1-0
-Date: 2012-06-28
+Version: 0.1-1
+Date: 2012-08-23
 Author: Khurram Nadeem, Peter Solymos
 Maintainer: Peter Solymos <solymos@ualberta.ca>
 Description: Likelihood based population viability analysis in the
@@ -17,6 +17,6 @@ URL: http://cran.r-project.org/package=PVAClone,
         http://dcr.r-forge.r-project.org/
 LazyLoad: yes
 LazyData: true
-Packaged: 2012-07-26 20:57:37 UTC; Peter
+Packaged: 2012-08-24 21:54:41 UTC; Peter
 Repository: CRAN
-Date/Publication: 2012-07-27 05:18:09
+Date/Publication: 2012-08-25 05:50:47
