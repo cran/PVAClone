@@ -35,6 +35,11 @@ the latent variables.
   \item{pred}{
 A matrix of replicates from the latent variables,
 e.g. as returned by \code{\link{generateLatent}}.
+When there are no missing values and both the model objects
+for the null and alternative hypotheses are without observation error,
+\code{pred} can be missing. 
+The log observations are used when \code{pred} is missing, and any user 
+supplied values for \code{pred} are used if provided.
 }
   \item{x}{
 A model selection object to be printed.
@@ -58,7 +63,6 @@ when both of the population growth models are fixed effect models,
 e.g. without observation error Gompertz 
 model Vs. without observation error Ricker model. 
 See examples below and in \code{\link{pva}}.
-
 }
 \value{
 \code{pva.llr} returns a single numeric value, the 
@@ -117,6 +121,26 @@ m3z <- pva(paurelia, ricker("normal"), 2, n.iter=1000)
 #model.select(m1z, m2z) # not yet implemented
 #model.select(m1z, m3z) # not yet implemented
 model.select(m2z, m3z)
+
+## Analysis of song sparrow data in Nadeem and Lele (2012)
+## use about 100 clones to get MLE's repoted in the paper.
+data(songsparrow)
+m1z <- pva(songsparrow, 
+    thetalogistic_D("normal",fixed=c(sigma2.d=0.66)), 
+    n.clones=5, n.adapt=3000, n.iter=1000)
+m2z <- pva(songsparrow, 
+    thetalogistic_D("normal",fixed=c(theta=1, sigma2.d=0.66)), 
+    n.clones=5, n.adapt=3000,n.iter=1000)
+m3z <- pva(songsparrow, 
+    thetalogistic_D("none",fixed=c(sigma2.d=0.66)), 
+    n.clones=5, n.adapt=3000,n.iter=1000)
+m4z <- pva(songsparrow, 
+    thetalogistic_D("none",fixed=c(theta=1,sigma2.d=0.66)), 
+    n.clones=5, n.adapt=3000,n.iter=1000)
+
+model.select(m2z, m1z) 
+model.select(m3z, m1z) 
+model.select(m4z, m1z)
 
 ## profile likelihood
 m <- pva(redstart, gompertz("normal"), 5, n.iter=5000)
