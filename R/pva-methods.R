@@ -5,17 +5,13 @@ setMethod("summary", "pva", function(object) {
     show(y)
 })
 
-## this extracts mcmc info 
+## this extracts mcmc info
 ## and transforms it to original scale if desired
-setMethod("as.mcmc.list", "pva", 
-function(x, diagn_scale=FALSE, ...) {
-    m <- as.mcmc.list(as(x,"dcmle"))
-    if (diagn_scale) {
-        x@model@transf(m)
-    } else {
-        m
-    }
-})
+diagn_scale <-
+function(object) {
+    m <- as(as(object, "dcmle"), "mcmc.list")
+    object@model@transf(m)
+ }
 
 ## coef method (takes into account fixed values)
 setMethod("coef", "pva", function(object) {
@@ -36,7 +32,7 @@ setMethod("vcov", "pva", function(object) {
     rv
 })
 setMethod("confint", "pva", function(object) {
-    ci <- confint(as.mcmc.list(object, diagn_scale=FALSE))
+    ci <- confint(diagn_scale(object))
     fx <- object@model@fixed
     if (is.null(fx))
         return(ci)
