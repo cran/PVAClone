@@ -2,6 +2,8 @@
 pva <-
 function(x, model, n.clones, ...)
 {
+    if (!is.numeric(x))
+        stop("x must be numeric: try using as.numeric(x)")
     if (all(n.clones <= 1))
         stop("data cloning is required, set n.clones properly")
     if (any(is.na(x[c(1, length(x))])))
@@ -31,7 +33,8 @@ function(x, model, n.clones, ...)
         dcf@data$O <- dcdim(data.matrix(x))
     fit <- dcmle(dcf, n.clones=n.clones,
         nobs=as.integer(sum(!is.na(x))), ...)
-    fit0 <- as(model@backtransf(as(fit, "mcmc.list")), "dcmle")
+    fit0 <- as(model@backtransf(as(fit, "MCMClist")), "dcmle")
+#    fit0 <- as(model@backtransf(as(fit, "mcmc.list")), "dcmle")
     ## summary (coef/fullcoef) and vcov is on original scale
     ## mcmc.list and diagnostics are on transformed scale
     s0 <- summary(fit0)@coef
