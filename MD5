@@ -1,5 +1,5 @@
-8286435ea171781ea4e5dcd91905f3bc *DESCRIPTION
-53aaa44f9055ba194cddfb1e41241fef *NAMESPACE
+737383a88a99b3ea76d101937e7cbc3a *DESCRIPTION
+fdc04e55878f8cdea98e2cbfc92dc1c4 *NAMESPACE
 30a83c9bc8278cfb2d0d8e1ef7b69894 *R/bevertonholt.R
 f25e415e39ad46b29630d0ccfc1837d6 *R/fancyPVAmodel.R
 211f9f768a4383afb0abcbb644b49d95 *R/generateMCMC.R
@@ -7,7 +7,7 @@ f25e415e39ad46b29630d0ccfc1837d6 *R/fancyPVAmodel.R
 d1b72e4db3961a0189a71013a5f6d160 *R/internals.R
 fe59a6cf485a544abb14da4745d80875 *R/modelselection.R
 19d9b1c497e95650442276dbe34bfbde *R/pva-class.R
-ac53e7e12123f343e036b41e6eb64a99 *R/pva-methods.R
+02dfc378def7e1a963809fcc799ab379 *R/pva-methods.R
 e7328e6c4cbe1484d348e8d95491ef30 *R/pva.R
 879b65ddab6725ca5c977228265e507d *R/ricker.R
 62224708aeb89b004241c1644f7e370a *R/thetalogistic.R
@@ -16,7 +16,7 @@ c2a30234686f2a01dc967a51021fdca2 *R/zzz.R
 197c3a5ddade20946a9cb5cca4e4e153 *data/paurelia.rda
 fab10eec4887e46759142844eeb24812 *data/redstart.rda
 70e1771fe705f7e887cfddadd04ac189 *data/songsparrow.rda
-6f4a1f5350426ea2b34ca55b95cf1f5f *inst/ChangeLog
+ee2049a709a3fece4c37167702ab47c5 *inst/ChangeLog
 731f6b1771020f0f2327188b1ed7bfb2 *man/PVAClone-package.Rd
 9ff1801ff7db868723342b38aff1dfe2 *man/fancyPVAmodel.Rd
 8f6149ee353b62a0c386fe35d1bbb988 *man/generateLatent.Rd
