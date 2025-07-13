@@ -1,4 +1,4 @@
-d53d27bbf97e18107ba82775d5f1d8a6 *DESCRIPTION
+64660aa2a224383b651d31368682da30 *DESCRIPTION
 fdc04e55878f8cdea98e2cbfc92dc1c4 *NAMESPACE
 30a83c9bc8278cfb2d0d8e1ef7b69894 *R/bevertonholt.R
 f25e415e39ad46b29630d0ccfc1837d6 *R/fancyPVAmodel.R
@@ -13,10 +13,10 @@ e7328e6c4cbe1484d348e8d95491ef30 *R/pva.R
 62224708aeb89b004241c1644f7e370a *R/thetalogistic.R
 b382c9bd16015d2b3a16b9a0edac6902 *R/thetalogistic_D.R
 c2a30234686f2a01dc967a51021fdca2 *R/zzz.R
-8faf250d78a120ba4c7ea2186efddd24 *build/partial.rdb
-a3af432b2e56304ab8f933bd593e8a27 *data/paurelia.R
-4638a0ac35d71055fefd16d5edfc1303 *data/redstart.R
-23afcfa614d30ba01bf79fe05eff0214 *data/songsparrow.R
+76161b65639451c966be75488458b3c3 *build/partial.rdb
+8e49827a78d9973142c16c44d41b42f3 *data/paurelia.rda
+7c8befcae57c2431498e908eaf1961ef *data/redstart.rda
+27c56f83fbbed3f4c2f9019f27e60dbb *data/songsparrow.rda
 30387beae670d6e28d0346ec245b1dd6 *inst/WORDLIST
 bcfe42e3d2a78c420076d60d9928866a *man/PVAClone-package.Rd
 9ff1801ff7db868723342b38aff1dfe2 *man/fancyPVAmodel.Rd
@@ -25,7 +25,7 @@ f4d0a108378cbc91f036769b6b7224d8 *man/growthmodels.Rd
 62a8036bdc8dcc8365bf1a06563feea5 *man/internals.Rd
 9c1e8ff95deb035e17c951902628e67a *man/model.select.Rd
 a6dd013253998818bc4dc94d0f88ee2d *man/paurelia.Rd
-2bff3763d33f301605100fab2f884f4c *man/pva-class.Rd
+357a8d26d2a55c5fa293567180708913 *man/pva-class.Rd
 4a0734bd273c29da22f99d78d0036d6f *man/pva-methods.Rd
 30f92a4daa5db6be3b5f8c4d003d6511 *man/pva.Rd
 af05dec053ab42012f8605bf2fa9f03a *man/pvamodel-class.Rd

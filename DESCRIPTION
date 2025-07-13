@@ -1,9 +1,16 @@
 Package: PVAClone
 Type: Package
 Title: Population Viability Analysis with Data Cloning
-Version: 0.1-7
-Date: 2024-01-24
-Author: Khurram Nadeem, Peter Solymos
+Version: 0.1-8
+Date: 2025-07-12
+Authors@R: c(person(given = "Khurram",
+                    family = "Nadeem",
+                    role = "aut"),
+             person(given = "Peter",
+                    family = "Solymos",
+                    role = c("aut", "cre"),
+                    comment = c(ORCID = "0000-0001-7337-1740"),
+                    email = "psolymos@gmail.com"))
 Maintainer: Peter Solymos <psolymos@gmail.com>
 Description: Likelihood based population viability analysis in the
   presence of observation error and missing data.
@@ -19,6 +26,9 @@ BugReports: https://github.com/psolymos/PVAClone/issues
 LazyLoad: yes
 LazyData: true
 NeedsCompilation: no
-Packaged: 2024-01-22 23:08:42 UTC; Peter
+Packaged: 2025-07-13 22:33:35 UTC; Peter
+Author: Khurram Nadeem [aut],
+  Peter Solymos [aut, cre] (ORCID:
+    <https://orcid.org/0000-0001-7337-1740>)
 Repository: CRAN
-Date/Publication: 2024-01-23 07:53:14 UTC
+Date/Publication: 2025-07-13 23:00:07 UTC
